@@ -26,13 +26,14 @@ public:
     # "media.setsinkid.enabled" to make it work properly
     # enableDynamicAudioDeviceSelection: true
     #
-    clientTitle: BigBlueButton
-    appName: BigBlueButton HTML5 Client
+
+    clientTitle: Infiniti
+    appName: Infiniti HTML5 Client
     bbbServerVersion: HTML5_FULL_BBB_VERSION
     displayBbbServerVersion: true
-    copyright: '©2023 BigBlueButton Inc.'
+    copyright: 'Cybex S.A'
     html5ClientBuild: HTML5_CLIENT_VERSION
-    helpLink: https://bigbluebutton.org/html5/
+    helpLink: https://help.infinitiplatform.com
     delayForUnmountOfSharedNote: 120000
     bbbTabletApp:
       enabled: true
@@ -54,7 +55,7 @@ public:
     # Use https URL of CSS file. Example: https://docs.bigbluebutton.org/administration/customize
     customStyleUrl: null
     darkTheme:
-      enabled: true
+      enabled: false
     askForFeedbackOnLogout: false
     # the default logoutUrl matches window.location.origin i.e. bigbluebutton.org for demo.bigbluebutton.org
     # in some cases we want only custom logoutUrl to be used when provided on meeting create. Default value: true
@@ -130,8 +131,8 @@ public:
     # this value to be kept under 16.
     breakouts:
       allowUserChooseRoomByDefault: false
-      captureWhiteboardByDefault: false
-      captureSharedNotesByDefault: false
+      captureWhiteboardByDefault: true
+      captureSharedNotesByDefault: true
       sendInvitationToAssignedModeratorsByDefault: false
       breakoutRoomLimit: 16
     # https://github.com/bigbluebutton/bigbluebutton/pull/10826
@@ -552,7 +553,7 @@ public:
     enabled: true
     showButton: false
     id: captions
-    dictation: false
+    dictation: true
     # Default pad which will store automatically generated captions
     defaultPad: en
     background: '#000000'
@@ -724,7 +725,7 @@ public:
     # Number of reconnection attempts of the signaling websocket, before
     # showing to the user there's an audio error.
     audioReconnectionAttempts: 3
-    sipjsHackViaWs: false
+    sipjsHackViaWs: true
     # sipjsAllowMdns: whether mDNS candidates should be allowed in local SDPs.
     # Default is false since FreeSWITCH doesn't resolve mDNS by default.
     sipjsAllowMdns: false
