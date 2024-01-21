@@ -137,7 +137,7 @@ class PresentationToolbar extends PureComponent {
        whiteboardId,
        fitToWidthHandler,
        multiUser,
-       currentSlideNum
+       currentSlideNum,
        amIPresenter,
        addWhiteboardGlobalAccess,
        removeWhiteboardGlobalAccess
